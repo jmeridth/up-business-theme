@@ -1,14 +1,24 @@
 name = "Up Business Theme"
 license = "MIT"
-licenselink = "https://gitlab.com/writeonlyhugo/up-business-theme/-/blob/master/LICENSE"
+licenselink = "https://github.com/jmeridth/up-business-theme/blob/main/LICENSE"
 description = "A clean and modern landing page website inspired by clean and modern illustrations."
 
-homepage = "https://gitlab.com/writeonlyhugo/up-business-theme/"
-demosite = "https://writeonlyhugo.gitlab.io/up-business-demo/"
+homepage = "https://github.com/jmeridth/up-business-theme/"
+demosite = "https://jmeridth.gitlab.io/up-business-demo/"
 
-tags = ["blog", "responsive", "personal", "light", "bootstrap", "portfolio", "landing", "company", "modern"]
+tags = [
+  "blog",
+  "responsive",
+  "personal",
+  "light",
+  "bootstrap",
+  "portfolio",
+  "landing",
+  "company",
+  "modern",
+]
 features = []
 
 [author]
-  name = "Iago Bozza"
-  homepage = "https://writeonlycode.io/"
+name = "Jason Meridth"
+homepage = "https://jmeridth.com/"
