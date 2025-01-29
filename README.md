@@ -41,7 +41,7 @@ version of the website with the theme.
 
 ## Credits
 
-Original repo was created by [Iago Bozza](https://gitlab.comwriteonlyhugo/up-business-theme) but has been inactive for a while and doesn't seem to merge in new merge requests. I'm more than willing to move this repo's content back to his repo if he wants to pick it back up.
+This is a fork of [Iago Bozza's Up Business Theme](https://gitlab.comwriteonlyhugo/up-business-theme).
 
 Hugo Up Business Theme is based on a [Figma Design by Abell
 Vo](https://www.figma.com/community/file/1022163547182520272).
