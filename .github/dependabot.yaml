@@ -1,10 +1,10 @@
 version: 2
 udpates:
-  - package-ecosystem: 'github-actions'
-    directory: '/'
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
-      interval: 'weekly
-      timezone: 'America/Chicago'
+      interval: "weekly"
+      timezone: "America/Chicago"
     commit-message:
       prefix: "chore(deps)"
     groups:
