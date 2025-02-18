@@ -1,0 +1,36 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Dart Sass Embedded
+        run: sudo snap install dart-sass-embedded
+      - uses: actions/checkout@v4 # (latest, tagged)
+        with:
+          submodules: true
+          fetch-depth: 0
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2 # (latest, tagged)
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: Build
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: hugo --minify
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3 # (latest, tagged)
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
